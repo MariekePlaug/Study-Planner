@@ -20,15 +20,15 @@ In the future, we can likely automate the fetching of this link.
 ### CSV Structure
 Each row in the CSV file represents one scheduled course session. The required columns
 
-| Column              | Description                                      |
-| ------------------- | ------------------------------------------------ |
-| **course_name**     | The name/title of the course                     |
-| **credits**         | Number of credit hours                           |
-| **day**             | Start day (Sunday, Monday, ... , Saturday)       |
-| **start_time**      | Start time (e.g., `2025-04-15 10:00`)            |
-| **duration**        | Duration (TimeDelta)                             |
-| **room**            | Room or lecture hall                             |
-| **lecturer**        | Instructor of the course                         |
+| Column              | Description                                  |
+| ------------------- |----------------------------------------------|
+| **course_name**     | The name/title of the course                 |
+| **credits**         | Number of credit hours                       |
+| **day**             | Start day (Sunday, Monday, ... , Saturday)   |
+| **start_time**      | Start time in 24 hour format (e.g., `18:00`) |
+| **duration**        | Duration (TimeDelta)                         |
+| **room**            | Room or lecture hall                         |
+| **lecturer**        | Instructor of the course                     |
 
 ### Timetable Display
 
