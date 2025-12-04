@@ -1,11 +1,11 @@
-import numpy as np
+import datetime as dt
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 from pathlib import Path
-import datetime as dt
 
 
-BASE_DIR = pathlib.Path(__file__).resolve().parents[2]
+BASE_DIR = Path(__file__).resolve().parents[2]
 DATA_DIR = BASE_DIR / "data"
 
 file = DATA_DIR / "planner_template - chavez_pope.csv"
