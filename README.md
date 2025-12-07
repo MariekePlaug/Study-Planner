@@ -45,3 +45,4 @@ We plan to support:
 
 ### Ideas
 - [] Create a timetable class which can be used to retrieve specific information and do specific things.
+- [] Add a table to enclose the days on the timetable for aesthetics.
