@@ -42,3 +42,6 @@ We plan to support:
 2. Interactive Timetable (Plotly)
    - Hover tooltips with additional course information
    - Potential zooming or filtering (e.g., by day, room, or teacher)
+
+### Ideas
+- [] Create a timetable class which can be used to retrieve specific information and do specific things.
