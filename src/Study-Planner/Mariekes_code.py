@@ -21,6 +21,13 @@ user = "Chavez"
 
 df = pd.read_csv(file).set_index("course_name")
 
+# Format dataframe columns into datetime and timedelta objects
+df["start_time"] = pd.to_datetime(df["start_time"], format="%H:%M")
+df["duration"] = pd.to_timedelta(df["duration"], unit="minutes")
+df["end_time"] = df["start_time"] + df["duration"]
+
+
+# Plot
 fig, ax = plt.subplots(figsize=(8, 6))
 ax.set_title(f"{user}'s Study Timetable")
 ax.xaxis.tick_top()
