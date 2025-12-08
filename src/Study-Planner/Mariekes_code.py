@@ -7,7 +7,6 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-from soupsieve.css_match import DAYS_IN_WEEK
 
 # Load File
 BASE_DIR: Path = Path(__file__).resolve().parents[2]
