@@ -42,20 +42,20 @@ df["height"] = df["end_num"] - df["start_num"]
 # )
 
 
-# Plot
-fig, ax = plt.subplots(figsize=(8, 6))
-# for subject, row in df.iterrows():
-#     x = row["day"]
-#     y = row["start_time"]
-#     width = row["day"]
-#     height = row["duration"]
-#
-#     period = Rectangle(
-#         xy=(x, y),
-#         width=width,
-#         height=height
-#     )
-#     ax.add_patch(period)
+# Set up the figure and axes
+fig, ax = plt.subplots(figsize=(9, 6))
+
+# Loop through the CSV file and generate rectangles
+for course, row in df.iterrows():
+    rect = Rectangle(
+        xy = (row['x'], row['start_num']),
+        width = 0.8,
+        height = row['height'],
+        facecolor = 'steelblue',
+        edgecolor = 'black'
+    )
+    ax.add_patch(rect)
+
 ax.set_title(f"{user}'s Study Timetable")
 ax.xaxis.tick_top()
 ax.set_xticks(ticks=np.arange(0, len(WEEK_DAYS)), labels=WEEK_DAYS)
