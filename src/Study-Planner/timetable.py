@@ -62,6 +62,14 @@ ax.set_xticks(ticks=np.arange(0, len(WEEK_DAYS)), labels=WEEK_DAYS)
 ax.set_xlim(- 0.5, len(WEEK_DAYS) - 0.5)
 ax.set_xticklabels(WEEK_DAYS)
 ax.set_xlabel("Week Day")
+for label in ax.get_xticklabels():
+    label.set_bbox(dict(
+        facecolor="white",
+        edgecolor="black",
+        boxstyle="round,pad=0.25"
+    ))
+
+# Y-axis formatting
 ax.invert_yaxis()
 # Force limits to one day to avoid autoscale issues
 pad_hours = 1
