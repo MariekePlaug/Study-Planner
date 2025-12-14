@@ -44,5 +44,8 @@ We plan to support:
    - Potential zooming or filtering (e.g., by day, room, or teacher)
 
 ### Ideas
-- [] Create a timetable class which can be used to retrieve specific information and do specific things.
-- [] Add a table to enclose the days on the timetable for aesthetics.
+- [ ] Create a timetable class which can be used to retrieve specific information and do specific things.
+- [ ] Add a table to enclose the days on the timetable for aesthetics.
+- [ ] Add another column in the CSV template called "label" which will be used for the labels on the rectangles.
+- [ ] Allow a user to manually enter information into the planner.  They should be able to add, remove, and edit entries.
+- [ ] Will need to handle rectangles overlapping gracefully.
