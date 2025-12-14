@@ -12,12 +12,13 @@ from pathlib import Path
 BASE_DIR: Path = Path(__file__).resolve().parents[2]
 DATA_DIR: Path = BASE_DIR / "data"
 WEEK_DAYS: list[str] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-HOURS = np.arange(0, 24)
+# HOURS = np.arange(0, 24)
 
 file = DATA_DIR / "planner_template - chavez_pope.csv"
 
 user = "Chavez"
 
+# Load the dataframe
 df = pd.read_csv(file).set_index("course_name")
 
 # Prepare the data
@@ -33,14 +34,6 @@ df["x"] = df["day"].map(day_to_x)
 df["start_num"] = mdates.date2num(df['start_time'])
 df["end_num"] = mdates.date2num(df['end_time'])
 df["height"] = df["end_num"] - df["start_num"]
-
-# Period to create timetable display
-# period = Rectangle(
-#     xy=(df["day"], df["start_time"]),
-#     width=df["day"],
-#     height=df["duration"]
-# )
-
 
 # Set up the figure and axes
 fig, ax = plt.subplots(figsize=(9, 6))
@@ -78,6 +71,7 @@ for label in ax.get_xticklabels():
 
 # Y-axis formatting
 ax.invert_yaxis()
+
 # Force limits to one day to avoid autoscale issues
 pad_hours = 1
 pad = pad_hours / 24
@@ -101,12 +95,3 @@ fig.text(
 )
 
 plt.show()
-
-# define times and days
-# start = dt.datetime(2025,1,1, 8,0)
-# datetime_vec = [start + i * dt.timedelta(minutes=15) for i in range(0,49)]  # quarter hour steps
-# time = [t.time() for t in datetime_vec]
-# print(time)
-# days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-# print(df)
-
