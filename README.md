@@ -49,3 +49,4 @@ We plan to support:
 - [ ] Add another column in the CSV template called "label" which will be used for the labels on the rectangles.
 - [ ] Allow a user to manually enter information into the planner.  They should be able to add, remove, and edit entries.
 - [ ] Will need to handle rectangles overlapping gracefully.
+- [ ] 
