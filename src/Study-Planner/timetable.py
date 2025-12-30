@@ -36,7 +36,7 @@ class Course:
         self.name = name
         self.credits = credits
         self.day = day
-        self.starttime = starttime
+        self.start_time = start_time
         self.duration = duration
         self.room = room
         self.lecturer = lecturer
