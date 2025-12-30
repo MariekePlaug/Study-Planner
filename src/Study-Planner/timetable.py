@@ -161,3 +161,5 @@ plot.static("skyblue", figsize_timetable, "Marieke")
 plot.show()
 
 
+if __name__ == '__main__':
+    main()
