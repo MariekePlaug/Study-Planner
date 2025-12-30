@@ -13,7 +13,8 @@ from pathlib import Path
 BASE_DIR: Path = Path(__file__).resolve().parents[2]
 DATA_DIR: Path = BASE_DIR / "data"
 WEEK_DAYS: list[str] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-#HOURS = np.arange(0, 24)
+BASE_DIR: Path = Path(__file__).resolve().parents[2]
+DATA_DIR: Path = BASE_DIR / "data"
 
 file = DATA_DIR / "planner_template - chavez_pope.csv"
 
