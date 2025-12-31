@@ -7,16 +7,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from pathlib import Path
+import plotly.graph_objects as go
 
 
-# Load File
-BASE_DIR: Path = Path(__file__).resolve().parents[2]
-DATA_DIR: Path = BASE_DIR / "data"
 WEEK_DAYS: list[str] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 BASE_DIR: Path = Path(__file__).resolve().parents[2]
 DATA_DIR: Path = BASE_DIR / "data"
 
-file = DATA_DIR / "planner_template - chavez_pope.csv"
 
 filename: str = "planner_template - chavez_pope.csv"
 
@@ -27,18 +24,12 @@ def load_course_data(file: str) -> pd.DataFrame:
     return df
 
 
-df = load_course_data(filename)
-
-
 def prepare_df(data: pd.DataFrame) -> pd.DataFrame:
     df = data.copy()
     df["start_time"] = pd.to_datetime(df["start_time"], format="%H:%M")
     df["duration"] = pd.to_timedelta(df["duration"], unit="minutes")
     df["end_time"] = df["start_time"] + df["duration"]
     return df
-
-
-df = prepare_df(df)
 
 
 class Course:
@@ -139,6 +130,10 @@ class Display():
 
         ax2.legend()
 
+    def dynamic(self, theme_color: str, figsize_timetable: tuple[int, int], user: str) -> None:
+        pass
+
+
     def show(self):
         plt.show()
 
@@ -156,9 +151,9 @@ def main():
                         row["lecturer"], colors[i + i * 7], figsize_timetable)
         courses.append(course)
 
-plot = Display(courses)
-plot.static("skyblue", figsize_timetable, "Marieke")
-plot.show()
+    plot = Display(courses)
+    plot.static("skyblue", figsize_timetable, user)
+    plot.show()
 
 
 if __name__ == '__main__':
