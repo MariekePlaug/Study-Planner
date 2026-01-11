@@ -23,6 +23,7 @@ WEEK_DAYS: list[str] = [
     "Friday",
     "Saturday",
 ]
+
 BASE_DIR = Path.cwd().parents[1]
 DATA_DIR: Path = BASE_DIR / "data"
 
