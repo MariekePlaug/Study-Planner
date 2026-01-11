@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7cc013f-f2c1-4c65-94d5-7678f5d127c6" name="Changes" comment="Committing .ipynb file.">
-      <change afterPath="$PROJECT_DIR$/.idea/Study Planner.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c7cc013f-f2c1-4c65-94d5-7678f5d127c6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Study-Planner/timetable.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Study-Planner/timetable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,26 +86,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Mariekes_code.executor": "Run",
-    "Python.timetable.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "#2 on plotly",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Mariekes_code.executor&quot;: &quot;Run&quot;,
+    &quot;Python.timetable.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#2 on plotly&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.General&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="timetable" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Study Planner" />
@@ -162,30 +159,6 @@
       <workItem from="1767629241604" duration="2136000" />
       <workItem from="1767632999247" duration="3628000" />
       <workItem from="1768143972956" duration="374000" />
-    </task>
-    <task id="LOCAL-00002" summary="test">
-      <option name="closed" value="true" />
-      <created>1764616569974</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1764616569974</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Updated the Readme with the second method we wish to use to produce the study planner which is a link from STiNE.">
-      <option name="closed" value="true" />
-      <created>1764622603518</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1764622603518</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updated the Readme with the second method we wish to use to produce the study planner which is a link from STiNE.">
-      <option name="closed" value="true" />
-      <created>1764629936629</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1764629936629</updated>
     </task>
     <task id="LOCAL-00005" summary="Adjusted the time description for start_time in README.md.">
       <option name="closed" value="true" />
@@ -555,7 +528,31 @@
       <option name="project" value="LOCAL" />
       <updated>1767632759677</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Alphabetized the imports">
+      <option name="closed" value="true" />
+      <created>1768144878928</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1768144878928</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Moved built in modules to the top according to PEP8">
+      <option name="closed" value="true" />
+      <created>1768145125313</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1768145125313</updated>
+    </task>
+    <task id="LOCAL-00053" summary="PEP8 spacing">
+      <option name="closed" value="true" />
+      <created>1768145181189</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1768145181189</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -573,9 +570,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Subtracted 0.4 to center the rectangle on the day tick." />
-    <MESSAGE value="Successfully got the rectangles working with the y-axis and added a 1 hour pad so that the timetable is more zoomed in to the relevant hours." />
-    <MESSAGE value="Ideas for user-created timetable and adding text to rectangles." />
     <MESSAGE value="Shifted the title of the figure to below the plot using fig.text()" />
     <MESSAGE value="Added a box around the xtick labels." />
     <MESSAGE value="Removed the weekday x label." />
@@ -598,7 +592,10 @@
     <MESSAGE value="Added __name__ == '__main__'" />
     <MESSAGE value="Began the plotly integration." />
     <MESSAGE value="Committing .ipynb file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Committing .ipynb file." />
+    <MESSAGE value="Alphabetized the imports" />
+    <MESSAGE value="Moved built in modules to the top according to PEP8" />
+    <MESSAGE value="PEP8 spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="PEP8 spacing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -612,6 +609,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Study_Planner$Mariekes_code.coverage" NAME="Mariekes_code Coverage Results" MODIFIED="1765214331246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Study-Planner" />
-    <SUITE FILE_PATH="coverage/Study_Planner$timetable.coverage" NAME="timetable Coverage Results" MODIFIED="1767634923737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Study-Planner" />
+    <SUITE FILE_PATH="coverage/Study_Planner$timetable.coverage" NAME="timetable Coverage Results" MODIFIED="1768146112652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/Study-Planner" />
   </component>
 </project>

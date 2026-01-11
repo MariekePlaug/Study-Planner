@@ -9,10 +9,9 @@ from matplotlib.patches import Rectangle
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from pathlib import Path
 import plotly.graph_objects as go
-from abc import ABC, abstractmethod
 from plotly.subplots import make_subplots
+
 
 WEEK_DAYS: list[str] = [
     "Sunday",
@@ -25,6 +24,7 @@ WEEK_DAYS: list[str] = [
 ]
 
 BASE_DIR = Path.cwd().parents[1]
+
 DATA_DIR: Path = BASE_DIR / "data"
 
 
@@ -66,7 +66,7 @@ class Course:
         self.color = color
 
         self.endtime = start_time + duration
-        self.y = start_time.hour * 60 + start_time.minute
+        self.y = start_time.hour * 60 + start_time.minute # Any better name that self.y?
         day_to_x = {
             day: i * figsize_timetable[0] / len(WEEK_DAYS)
             for i, day in enumerate(WEEK_DAYS)
