@@ -49,4 +49,11 @@ We plan to support:
 - [ ] Add another column in the CSV template called "label" which will be used for the labels on the rectangles.
 - [ ] Allow a user to manually enter information into the planner.  They should be able to add, remove, and edit entries.
 - [ ] Will need to handle rectangles overlapping gracefully.
-- [ ] 
+
+# 26-01-26 Meeting
+## Adapter Design Pattern
+## Factory Method
+## Builder method
+Might be useful to say to use this input with that output.
+- Input adapters can return a list of courses
+- Ensure typing in main functions and other functions. Use MyPy to check code for typing options. It helps with handling of types. https://github.com/python/mypy

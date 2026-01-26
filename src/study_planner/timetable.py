@@ -307,6 +307,7 @@ def choose_layout(type) -> Timetable:
         return StaticTimestable()
     elif type == "dynamic":
         return DynamicTimetable()
+    raise ValueError(f"Unknown timetable type: {type}")
 
 
 def main(type, filename, themecolor, figsize_timetable, user):
