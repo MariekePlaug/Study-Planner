@@ -27,6 +27,59 @@ BASE_DIR = Path.cwd().parents[1]
 DATA_DIR: Path = BASE_DIR / "data"
 
 
+def initialize_inputs() -> dict:
+    """Initialize an empty dictionary to collect user inputs of course information"""
+    return {
+        "course_name": [],
+        "credits": [],
+        "day": [],
+        "start_time": [],
+        "duration": [],
+        "room": [],
+        "lecturer": []
+    }
+
+def get_user_inputs():
+    """Collect one course entry from the user"""
+    course = input("Enter course name: ")
+    cred = int(input("Enter credits: "))
+    da = input("Enter day (Monday, Tuesday, etc): ").capitalize()
+    start = input("Enter start time (HH:mm): ")
+    dur = int(input("Enter duration (in minutes): "))
+    r = input("Enter room: ")
+    lect = input("Enter lecturer: ")
+
+    return course, cred, da, start, dur, r, lect
+
+
+def dict_from_user_input() -> dict:
+    """Generates a dictionary from repeated user inputs"""
+
+    data = initialize_inputs()
+
+    choice = "y"
+    while choice.lower() == "y":
+        course, cred, da, start, dur, r, lect = get_user_inputs()
+
+        data["course_name"].append(course)
+        data["credits"].append(cred)
+        data["day"].append(da)
+        data["start_time"].append(start)
+        data["duration"].append(dur)
+        data["room"].append(r)
+        data["lecturer"].append(lect)
+
+        choice = input("\nAdd another course? (y/n): ")
+
+    return data
+
+
+def generate_csv(user_input: dict, name: str = "timetable.csv") -> pd.DataFrame:
+    """Generates a csv file from the user's inputs"""
+    df = pd.DataFrame(user_input)
+    return df.to_csv(DATA_DIR / name, index=False)
+
+
 def load_course_data(file: str) -> pd.DataFrame:
     """Load course data from csv file in a padas dataframe"""
     file = DATA_DIR / file
