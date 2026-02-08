@@ -39,6 +39,7 @@ BLANK_INPUT_DICT = {
 
 def get_user_inputs() -> tuple[str, int, str, str, int, str, str]:
     """Collect one course entry from the user"""
+
     course = input("Enter course name: ")
 
     while True:
@@ -72,6 +73,7 @@ def get_user_inputs() -> tuple[str, int, str, str, int, str, str]:
             print("Invalid time. Please enter time in full minutes.")
 
     r = input("Enter room: ")
+
     lect = input("Enter lecturer: ")
 
     return course, cred, da, start, dur, r, lect
@@ -99,9 +101,10 @@ def dict_from_user_input() -> dict:
     return data
 
 
-def generate_csv(user_input: dict, name: str = "timetable.csv") -> None:
-    """Generates a csv file from the user's inputs"""
+def generate_csv(user_input: dict, name: str = "timetable.csv") -> Path:
+    """Generates a csv file from the user's inputs and return its path"""
     df = pd.DataFrame(user_input)
+
     choice = input("\n Would you like to name the csv file? (y/n): ").lower()
     if choice == "y":
         name = input("Enter name of csv file: ") + ".csv"
@@ -430,5 +433,5 @@ if __name__ == "__main__":
         themecolor="skyblue",
         figsize_timetable=(8, 6),
         user="Marieke",
-        auto_generate=False
+        auto_generate=True
     )
