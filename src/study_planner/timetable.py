@@ -11,7 +11,6 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-
 WEEK_DAYS: list[str] = [
     "Sunday",
     "Monday",
@@ -21,8 +20,8 @@ WEEK_DAYS: list[str] = [
     "Friday",
     "Saturday",
 ]
-
-BASE_DIR = Path.cwd().parents[1]
+BASE_DIR = Path(__file__).resolve().parents[2]
+print("base dir:" , BASE_DIR)
 
 DATA_DIR: Path = BASE_DIR / "data"
 
@@ -36,7 +35,7 @@ BLANK_INPUT_DICT = {
     "lecturer": []
 }
 
-
+# %%
 def get_user_inputs() -> tuple[str, int, str, str, int, str, str]:
     """Collect one course entry from the user"""
 
